@@ -1,3 +1,4 @@
+/* Dillinger auto styles */
 @charset "UTF-8";
 #md-embed code {
   color: #c7254e;
@@ -4654,4 +4655,9 @@
     display: block;
     width: 100%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* Custom styles */
+#md-embed .center-img {
+  text-align: "center"
+}
