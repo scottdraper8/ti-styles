@@ -35,10 +35,35 @@ hr {
   display: none;
 }
 
+
+/* SCROLLBAR
+------------------------------------------------- */
+body,
+.learner__sidebar-list {
+  overflow-y: overlay;
+}
+
+/* width */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #b7b7b7;
+  border-radius: 5px;
+}
+
+
 /* BACKGROUND STYLES
 ------------------------------------------------- */
 body {
-  background: url(placeholder) no-repeat center center fixed;
+  background: url(https://i.imgur.com/iuD3a8h.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -93,7 +118,6 @@ div[role="banner"] .header__left a:hover {
 .learner__sidebar-list {
   height: fit-content !important;
   max-height: 60vh;
-  overflow-y: overlay;
 }
 
 /*  "Hide" button */
