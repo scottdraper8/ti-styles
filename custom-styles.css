@@ -55,7 +55,7 @@ body,
 
 /* Handle */
 *::-webkit-scrollbar-thumb {
-  background: #b7b7b7;
+  background: white;
   border-radius: 5px;
 }
 
@@ -63,7 +63,7 @@ body,
 /* BACKGROUND STYLES
 ------------------------------------------------- */
 body {
-  background: url(placeholder) no-repeat center center fixed;
+  background: url(https://i.imgur.com/tMd0wGQ.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -140,6 +140,11 @@ div[role="banner"] .header__left a:hover {
   border-radius: 0 0 var(--radius) var(--radius);
   background: var(--glass);
   backdrop-filter: blur(5px);
+}
+
+/* Lesson list item  */
+.syllabus__topic {
+  padding-right: 1em;
 }
 
 /* Active topic  */
