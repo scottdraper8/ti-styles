@@ -1,0 +1,202 @@
+/* GLOBAL STYLES & RESET
+------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+:root {
+  --glass: rgba(255, 255, 255, 0.75);
+  --radius: 5px;
+  --accent-highlight-background-color: var(--accent-color);
+  --accent-highlight-color: white;
+}
+
+.btn--primary,
+textarea {
+  border-radius: var(--radius);
+}
+
+textarea {
+  margin-bottom: 0.5rem;
+}
+
+select,
+select:hover {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: var(--accent-color);
+  border-radius: var(--radius);
+}
+
+hr {
+  display: none;
+}
+
+
+/* SCROLLBAR
+------------------------------------------------- */
+body,
+.learner__sidebar-list {
+  overflow-y: overlay;
+}
+
+/* width */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 5px;
+}
+
+
+/* BACKGROUND STYLES
+------------------------------------------------- */
+body {
+  background: url(placeholder) no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+/* HEADER STYLES
+------------------------------------------------- */
+div[role="banner"] {
+  background-color: var(--accent-color);
+}
+
+/* Home icon & course title */
+div[role="banner"] .header__left a {
+  background-color: var(--accent-color);
+  color: white;
+  font-size: 2rem;
+  line-height: 1;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.24, 0.54, 0.87, 1.01);
+}
+
+div[role="banner"] .header__left a:hover {
+  color: white;
+  background-color: var(--accent-color);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.header__right img {
+  position: absolute;
+  top: 0.75rem !important;
+  right: 4rem;
+}
+
+.header__left {
+  position: relative;
+}
+
+.header__left__icon {
+  position: absolute;
+  top: -0.35rem;
+}
+
+.course-title {
+  position: absolute;
+  top: 1.5rem;
+  left: 7rem;
+  height: 2.5rem;
+}
+
+
+/* SIDEBAR STYLES
+------------------------------------------------- */
+/*  Lessons list */
+.learner__sidebar-list {
+  height: fit-content !important;
+  max-height: 60vh;
+}
+
+/*  "Hide" button */
+.learner__container__toggle .btn {
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+/*  "Lessons" button */
+.expandable-sidebar .btn:first-child .expandable-sidebar__toggle {
+  border-top-left-radius: var(--radius);
+}
+
+/* Top of the sidebar  */
+.learner__sidebar .layout-panel {
+  border-top-left-radius: calc(var(--radius) + 5px);
+}
+
+/*  Bottom of the sidebar */
+.expandable-sidebar__buttons {
+  border-radius: 0 0 var(--radius) var(--radius);
+  background: var(--glass);
+  backdrop-filter: blur(5px);
+}
+
+/* Lesson list item  */
+.syllabus__topic {
+  padding-right: 1em;
+}
+
+/* Active topic  */
+.syllabus__topic--active {
+  border-radius: var(--radius);
+}
+
+.syllabus__topic--active .icon-circle {
+  padding-right: 0.5em;
+}
+
+
+/* MAIN CONTENT STYLES
+------------------------------------------------- */
+/* Main content box and buttons */
+.learner__content .layout-panel,
+.btn,
+.directional__nav__button {
+  border-radius: var(--radius);
+}
+
+/* Main content box  */
+.layout-panel {
+  background: var(--glass);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+}
+
+/* Notes page box */
+.tools__container__inner,
+.note__editor {
+  background: transparent;
+}
+
+/* Notes page heading */
+.tools__container__inner--resources {
+  border-top: 1px solid black;
+}
+
+/* Notes page textarea */
+.redactor-box {
+  border-color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.6) !important;
+  border-radius: var(--radius) !important;
+}
+
+/* Slideshow page top bar */
+.slide-show__top-bar {
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.topic__contained__content {
+  border-radius: 0 0 var(--radius) var(--radius);
+}
