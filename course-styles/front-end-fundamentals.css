@@ -63,7 +63,7 @@ body,
 /* BACKGROUND STYLES
 ------------------------------------------------- */
 body {
-  background: url(placeholder) no-repeat center center fixed;
+  background: url("https://i.imgur.com/tMd0wGQ.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
