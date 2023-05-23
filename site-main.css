@@ -11,6 +11,7 @@
   --radius: 5px;
   --accent-highlight-background-color: var(--accent-color);
   --accent-highlight-color: white;
+  --scroll-thumb-color: white;
 }
 
 .btn--primary,
@@ -29,12 +30,18 @@ select:hover {
   color: white;
   background-color: var(--accent-color);
   border-radius: var(--radius);
+  color: #636e7b
 }
 
 hr {
   display: none;
 }
 
+.custom-hr {
+  height: 0.25rem;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
 
 /* SCROLLBAR
 ------------------------------------------------- */
@@ -55,7 +62,7 @@ body,
 
 /* Handle */
 *::-webkit-scrollbar-thumb {
-  background: white;
+  background: var(--scroll-thumb-color);
   border-radius: 5px;
 }
 
@@ -63,7 +70,7 @@ body,
 /* BACKGROUND STYLES
 ------------------------------------------------- */
 body {
-  background: url("placeholder") no-repeat center center fixed;
+  background: url(https://i.imgur.com/tMd0wGQ.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
