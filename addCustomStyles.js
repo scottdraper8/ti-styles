@@ -24,7 +24,7 @@ let addStylesheet = (url) => {
     link.href = url;
     document.head.appendChild(link);
 }
-addStylesheet("https://cdn.jsdelivr.net/gh/scottdraper8/ti-styles/main.css")
+addStylesheet("https://cdn.jsdelivr.net/gh/scottdraper8/ti-styles/site-main.css")
 addStylesheet("https://cdn.jsdelivr.net/gh/scottdraper8/ti-styles/dillinger.css")
 
 
@@ -61,7 +61,4 @@ switch (path) {
 }
 
 // Set the scrollbar color
-let scrollThumbs = document.querySelectorAll('::-webkit-scrollbar-thumb')
-for (let thumb of scrollThumbs) {
-    thumb.style.background = scrollbarColor
-}
+document.querySelectorAll(':root').setProperty('--scroll-thumb-color', scrollbarColor)
