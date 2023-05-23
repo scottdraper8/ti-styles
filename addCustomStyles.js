@@ -61,4 +61,4 @@ switch (path) {
 }
 
 // Set the scrollbar color
-document.querySelectorAll(':root').setProperty('--scroll-thumb-color', scrollbarColor)
+document.querySelector(':root').setProperty('--scroll-thumb-color', scrollbarColor)
