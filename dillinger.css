@@ -1,7 +1,6 @@
 @charset "UTF-8";
 #md-embed code {
-  color: #c7254e;
-  background-color: #f9f2f4;
+  border: none;
   border-radius: 4px;
 }
 #md-embed code,
