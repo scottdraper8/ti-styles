@@ -30,5 +30,5 @@ addStylesheet("https://cdn.jsdelivr.net/gh/scottdraper8/ti-styles/main.css")
 addStylesheet("https://cdn.jsdelivr.net/gh/scottdraper8/ti-styles/dillinger.css")
 
 
-/* EDIT SCROLLBARS
+/* EDIT SCROLLBARS & BACKGROUND IMAGE
 ---------------------------------------------------------- */
