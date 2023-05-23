@@ -25,7 +25,7 @@ let addStylesheet = (url) => {
     document.head.appendChild(link);
 }
 addStylesheet("https://cdn.jsdelivr.net/gh/scottdraper8/ti-styles/site-main.css")
-addStylesheet("https://cdn.jsdelivr.net/gh/scottdraper8/ti-styles/dillinger.css")
+addStylesheet("https://cdn.jsdelivr.net/gh/scottdraper8/ti-styles/dillinger-markdown.css")
 
 
 /* EDIT SCROLLBARS & BACKGROUND IMAGE
