@@ -7,6 +7,9 @@
 }
 
 :root {
+  --accent-color: #174f7e;
+  --secondary-color: #1e6958;
+  --link-color: #93649c;
   --glass: rgba(255, 255, 255, 0.75);
   --radius: 5px;
   --accent-highlight-background-color: var(--accent-color);
